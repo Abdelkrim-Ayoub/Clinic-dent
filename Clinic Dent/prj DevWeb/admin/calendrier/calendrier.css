@@ -1,0 +1,87 @@
+/* Style général */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(img8.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+/* En-tête */
+header {
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    z-index: 99;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h2 {
+    font-size: 2em;
+    color: #1d4f73;
+    user-select: none;
+    text-transform: uppercase;
+}
+
+/* Conteneur du calendrier */
+#calendar {
+    margin: 100px auto 30px;
+    max-width: 1000px;
+    padding: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    background: rgba(245, 245, 245, 0.8);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Titre principal dans la page */
+h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #1d4f73;
+    margin-bottom: 20px;
+}
+
+/* Couleurs des événements dans le calendrier */
+.fc-event {
+    background-color: #2a628f;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.fc-event:hover {
+    background-color: #1d4f73;
+}
+
+/* Style des jours */
+.fc-daygrid-day {
+    text-align: center;
+    color: #333;
+}
+
+.fc-day-today {
+    background: rgba(44, 123, 229, 0.1);
+    font-weight: bold;
+    border: 1px solid #2c7be5;
+}
